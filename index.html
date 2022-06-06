@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <h1 class="header__title">Shop now</h1>
+        </div>
+        <div  class="header__container">
+            <div class="header__filters">
+                <button class="estiloGeralBotoes estiloGeralBotoes--Todos">Todos os produtos</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--Hortifruti">Hortifruti</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--Panificadora">Panificadora</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--Laticinio">Laticínios</button>
+            </div>
+
+            <div class="containerBuscaPorNome">
+                
+                <input type="text" placeholder="pesquisar por" class="campoDeBusca">
+                <button class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"><img src="./src/img/search.svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="containerCards" id="listProdutos">
+                <ul class="containerCards__cards">
+                </ul>
+            </div>
+    
+            <div class="container__cart">
+                <div class="cart__containerTitle">
+                    <img src="./src/img/iconCart.svg" alt="">
+                    <h2>Carrinho</h2>
+                </div>
+                <div class="cart__products">
+                    <div class="cart__vazio">
+                        <img src="./src/img/shopping-bag.svg" alt="carrinho vazio">
+                        <p>Por enquanto não temos produtos no carrinho</p>
+                    </div>
+                </div>
+                <ul class="cart__quantidadeTotal">
+                    <li class="cart__list cart__quantidade">
+                        <p>Quantidade</p>
+                        <p id="quantity">0</p>
+                    </li>
+                    <li class="cart__list cart__total">
+                        <p>Total</p>
+                        <p id="totalValue">R$ 0.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
